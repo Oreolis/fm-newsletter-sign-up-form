@@ -162,7 +162,7 @@
       align-items: center;
 
       &::before {
-        content: url('/assets/images/icon-list.svg');
+        content: url('./assets/images/icon-list.svg');
       }
     }
   }
