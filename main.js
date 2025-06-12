@@ -4,13 +4,11 @@ const emailError = document.getElementById('email-error');
 const userEmailElement = document.getElementById('user_email');
 const currentEmail = localStorage.getItem('userEmail');
 
-// ✅ This runs only on the success page
 if (currentEmail && userEmailElement) {
   userEmailElement.textContent = currentEmail;
   localStorage.removeItem('userEmail');
 }
 
-// ✅ This runs only on the form page
 if (form && emailInput && emailError) {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
