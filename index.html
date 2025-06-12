@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>FM | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <main>
+    <!-- Sign-up form start -->
+    <article class="newsletter">
+      <div class="newsletter__content">
+        <h1>Stay updated!</h1>
+        
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        
+        <ul role="list" class="newsletter__list">
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+
+        <form id="form" action="success.html" class="newsletter__content-form" novalidate>
+          <label for="email">Email address</label>
+          <input id="email" type="email" placeholder="email@company.com" required />
+          <span aria-live="polite" id="email-error" class="error"></span>
+          <button class="button" type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+
+      <div class="newsletter__image">
+        <picture>
+          <source srcset="assets/images/illustration-sign-up-desktop.svg" media="(min-width: 1024px)" />
+          <source srcset="assets/images/illustration-sign-up-tablet.svg" media="(min-width: 650px)" />
+          <img src="assets/images/illustration-sign-up-mobile.svg" alt="Newsletter subscribing" loading="lazy" />
+        </picture>
+      </div>
+    </article>
+    <!-- Sign-up form end -->
+  </main>
+</body>
+</html>
